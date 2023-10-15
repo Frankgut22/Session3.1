@@ -43,9 +43,11 @@ public class Cuenta {
 
 	public void retirar (double i) {
 		//if(i<=this.getSaldo())
-			if(i>=this.getSaldo())
-				this.setSaldo(this.getSaldo()-i);
-
+		if(this.getSaldo()-i>-500) {
+			this.setSaldo(this.getSaldo()-i);
+			
+		}else System.out.print("Error , su saldo no puede ser menor de 500\n");
+		
 	}
 	
 	

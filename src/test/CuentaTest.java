@@ -54,7 +54,7 @@ class CuentaTest {
 		System.out.println("Saldo actual de "+aux2.getSaldo());
 		aux2.retirar(150);
 		aux2.ingresar(50);
-		assertEquals(-450, aux2.getSaldo());
+		assertEquals(-300, aux2.getSaldo());
 	}
 	@Test
 	void test15() {
